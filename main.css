@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 
+HEADER
+----------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav_right-section{
+    width: 300px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+}
+nav .nav_right-section .gmail{
+    margin-right: 18px;
+    color: #000000;
+}
+nav .nav_right-section .imagenes{
+    margin-right: 27px;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+nav .nav_right-section .menu-icon{
+    background-image: url('https://ssl.gstatic.com/gb/images/bar/al-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 5.5%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+nav .nav_right-section .photo{
+    background-image: url('https://lh3.googleusercontent.com/ogw/AF2bZyiJE-35Ta_bFLxCuqZBZxkgF4GbVnktWVPnWOrHRw=s32-c-mo');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 34.7px;
+    height: 34.7px;
+    border-radius: 50%;
+    margin-right: 5.5%;
+    cursor: pointer;
+}
+
+
+/* 
+MAIN
+----------------------------------------------------------- */
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo-container{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+main .main-logo img {
+    width: 300px;
+}
+main .main-input {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 580px;
+    height: 45px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 30px;   
+}
+main .main-input-container-search{
+    width: 500px;
+    height: 45px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+main .main-input-container-icons{
+    width: 80px;
+    height: 45px;
+    /* background-color:aqua; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+main .main-input input {
+    width: 410px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 12px;
+    border: none;
+    outline: none;
+    /* background-color: rgb(233, 129, 129); */
+}
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon{
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    margin-left: 14px;
+}
+main .main-input .micro-icon{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+main .main-input .photo-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/375px-Google_Lens_Icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 13.5px;
+}
+/* Ocultar el botón de limpiar al inicio */
+.clear-button {
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/10/01/49/x-1727490_1280.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    margin-right: 20px;
+    display: none;
+    padding: 0;
+}
+ /* Mostrar el botón de limpiar cuando el input tenga texto */
+ .main-input input[type="text"]:not(:placeholder-shown) + .clear-button {
+    display: inline-block;
+}
+/* Estilos para la línea separadora */
+.main-input-container .separator-line {
+    display: none; /* Inicialmente oculta */
+    width: 1px; /* Ancho de la línea */
+    height: 70%; /* Altura de la línea */
+    background-color: #dfe1e5; /* Color de la línea */
+    margin-right: 11px;
+}
+
+/* Mostrar la línea separadora solo cuando el input tenga texto */
+.main-input input:not(:placeholder-shown) ~ .separator-line {
+    display: block; /* Mostrar la línea cuando el input tenga texto */
+}
+
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 1px solid #ffffff;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 9px;
+}
+main .main-buttons button:hover{
+    border: 1px solid;
+    border-color: #5f636815;
+    color: #000001de;
+    box-shadow: 0 1px 1px #20212447;
+}
+
+
+/* FOOTER 
+------------------------------------------------------------------------------------------------*/
+.colo {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: auto; /* Altura del footer existente más 10px de separación */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #e4e4e4;
+    color: #5f6368;
+}
+
+.colo p{
+    margin-left: 20px;
+    font-size: 14px;
+    
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    
+}
+@media screen and (max-width: 1200px) {
+    footer {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    footer {
+        flex-direction: column; /* Cambia la dirección a column para apilar los subcontenedores uno encima del otro */
+        align-items: center; /* Centra los subcontenedores horizontalmente */
+        min-height: 100px
+    }
+}
+footer ul{
+    margin: 0;
+    padding-left: 0;
+}
+footer .footer-left{
+    width: auto;
+    height: 50px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+@media screen and (max-width: 1200px) {
+    footer .footer-left {
+        margin-left: 0;
+    }
+}
+footer .footer-right{
+    width: auto;
+    height: 50px;
+    /* background-color:aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+@media screen and (max-width: 1200px) {
+    footer .footer-right {
+        margin-right: 0;
+    }
+}
+footer ul li {
+    margin: 0 10px; /* Reducido el margen horizontal para separar los enlaces */
+    display: inline; /* Cambiado de flex a inline para evitar que los enlaces se apilen verticalmente */
+}
+
+footer ul li a {
+    color: #5f6368;
+    text-decoration: none; /* Añadido para eliminar el subrayado de los enlaces */
+    padding: 4px;
+}
